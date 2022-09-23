@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    position: relative;
+    background: url(../mp4/saiyd.gif) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1,h2{
+    text-align: center;
+    color: white;
+
+}
+
+h3{
+    position: absolute;
+    color: white;
+    top: 90%;
+    font-size: 13px;
+}
+
+
+.formualario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 350px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 24pt;
+}
+
+input{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(6, 6, 16,06);
+    transition: 1s;
+}
+
+input:hover{
+    transform: scale(1.1);
+}
+input:focus{
+    transform: scale(1.1);
+}
+
+button{
+    height: 30px;
+    margin: 10px;
+    color: white;
+    background-color: rgba(6, 6, 16,06);
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    color: red;
+}
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam64 to Battleye</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/ico/favico.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h3>By Saiyd (Victor Donato)</h3>
+        <h1>Steam64 para Battleye Guid</h1>
+        <div class="formualario">
+            <div class="textos">
+                <h2></h2>
+                <form method="dialog">
+                    <label for="uid">UID64 da Steam</label>
+                    <input type="text" name="uid" id="uid" placeholder="76561198110570669" maxlength="17" required>
+                    <input type="text" name="resultado" id="guid" placeholder="GUID" readonly>
+                    <button id="enviar" type="submit" onclick="guid_get()" value="">Procurar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="src/js/md5.js"></script>
+    <script src="src/js/BigInteger.min.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
