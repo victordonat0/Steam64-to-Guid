@@ -1,19 +1,19 @@
 function guid_get(){
-  var uid = document.getElementById('uid').value;
+  const uid = document.getElementById('uid').value;
   
     
-    var steamId = bigInt(uid);
+    let steamId = bigInt(uid);
 
-    var parts = [0x42,0x45,0,0,0,0,0,0,0,0];
+    let parts = [0x42,0x45,0,0,0,0,0,0,0,0];
 
     for (var i = 2; i < 10; i++) {
-      var res = steamId.divmod(256);
+      let res = steamId.divmod(256);
       steamId = res.quotient; 
       parts[i] = res.remainder.toJSNumber();
     }
 
-    var wordArray = CryptoJS.lib.WordArray.create(new Uint8Array(parts));
-    var hash = CryptoJS.MD5(wordArray);
+    let wordArray = CryptoJS.lib.WordArray.create(new Uint8Array(parts));
+    let hash = CryptoJS.MD5(wordArray);
     // console.log(hash.toString());
     document.getElementById("guid").value = hash.toString();
     
